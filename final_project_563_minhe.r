@@ -1,11 +1,10 @@
-setwd("/home/aaron/Documents/NCSU_MinHe/ST563/final_project")
 library(caret)
 library(tidyverse)
 library(cluster) 
 library(MASS)
 library(corrplot)
 # polynomial regression, clustering, KNN
-redDat = read.table("winequality-red.csv", sep = ";", header = T)
+redDat = read.table("https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv", sep = ";", header = T)
 str(redDat)
 head(redDat)
 summary(redDat)
